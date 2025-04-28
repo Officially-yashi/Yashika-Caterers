@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Your Event | Yashika Caterers</title>
+  <link rel="stylesheet" href="booking.css" />
+</head>
+
+
+<body>
+  
+  <header class="header" style="width: 100%;">
+    <h1 style="color: white; padding-bottom: 1rem;">Yashika Caterers</h1>
+    <nav>
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="decor.html">Decor</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testi.html">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+</header>
+<br><br>
+  <div class="booking-container">
+    <h1>Book Your Event with Yashika Caterers</h1>
+
+    <form action="#" method="POST" class="booking-form">
+
+      <fieldset>
+        <legend>Event Details</legend>
+
+        <label for="eventType">Type of Event</label>
+        <select id="eventType" name="eventType" required>
+          <option value="">Select Event</option>
+          <option>Wedding Catering</option>
+          <option>Birthday Party</option>
+          <option>Corporate Event</option>
+          <option>Private Gathering</option>
+          <option>Tent & Seating Setup</option>
+          <option>Theme Decoration</option>
+          <option>Stage and Entry Setup</option>
+          <option>Live Food Counter</option>
+          <option>Deserts and Icecream Stalls</option>
+          <option>Small Gathering</option>
+          <option>Sangeet Function</option>
+          <option>Engagement Ceremony</option>
+          <option>Baby Shower Ceremony</option>
+          <option>Anniversary Celebration</option>
+          <option>Festival Catering</option>
+          <option>Other</option>
+        </select>
+
+        <label for="eventDate">Event Date</label>
+        <input type="date" id="eventDate" name="eventDate" required>
+
+        <label for="eventTime">Event Time</label>
+        <input type="time" id="eventTime" name="eventTime" required>
+
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" name="guests" min="10" max="1000" required>
+      </fieldset>
+
+    
+      <fieldset>
+        <legend>Menu Preferences</legend>
+
+        <label for="menu">Select Menu Type</label>
+        <select id="menu" name="menu" required>
+          <option value="">--Choose Menu--</option>
+          <option>Veg</option>
+          <option>Non-Veg</option>
+          <option>Italian</option>
+          <option>Indian</option>
+          <option>Rajasthani</option>
+          <option>Stall Food</option>
+          <option>Desserts</option>
+          <option>Ice Cream</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Services</legend>
+
+        <label><input type="checkbox" name="services" value="Decoration"> Decoration</label>
+        <label><input type="checkbox" name="services" value="Tent Rental"> Tent Rental</label>
+        <label><input type="checkbox" name="services" value="Sound & DJ"> Sound & DJ</label>
+        <label><input type="checkbox" name="services" value="Live Counters"> Live Counters</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Contact Information</legend>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+      </fieldset>
+
+     
+      <fieldset>
+        <legend>Special Instructions</legend>
+        <textarea name="notes" id="notes" rows="5" placeholder="Mention anything extra here..."></textarea>
+      </fieldset>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+  <br><br>
+  <footer class="footer">
+    <div class="footer-content">
+ 
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#decorations">Decor</a></li>
+          
+        </ul>
+        <ul class="footer-links">
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+  
+  
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <p>📧 Email: <a href="mailto:yashikacaterers@example.com">yashikacaterers@example.com</a></p>
+        <p>📞 Phone: <a href="tel:+919876543210">+91-9876543210</a></p>
+        <p>📍 Location: Jaipur, Rajasthan</p>
+      </div>
+    </div>
+  
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Yashika Caterers...</p>
+    </div>
+  </footer>
+</body>
+</html>
